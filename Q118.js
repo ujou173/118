@@ -120,4 +120,4 @@ function calculate(a, b, operator) {
 console.log(calculate(15, 5, "+"));
 
 // ? 23번, 10을 3으로 나눈 나머지를 구하는 코드를 작성해보세요.
-console.log(10/3);
+console.log(10%3);
