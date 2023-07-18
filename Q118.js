@@ -83,3 +83,41 @@ console.log("falsy(거짓으로 간주되는 값들)에는 truthy에서 든 예�
 // ? 19번, typeof 연산자를 사용해 변수의 타입을 확인하는 예제 코드를 작성해보세요.
 let value = 'name';
 console.log(typeof(value));
+console.log("typeof()의 괄호 안에 변수를 넣음으로써 typeof() 메서드가 해당 변수의 타입을 체크합니다.");
+
+//  ? 20번, 자바스크립트에서 ==와 ===의 차이점을 설명해보세요.
+console.log("==는 동등 연산자로 값을 비교합니다. 값을 비교할때 강제적으로 타입을 변경하기 때문에 타입은 무시되며 오로지 값이 동등한지만 체크합니다. ===는 일치 연산자로 타입을 변경하지 않고 값을 비교합니다. 따라서 타입을 함께 체크하는 더욱 엄격한 비교를 실행합니다.");
+
+// ? 21번, 변수 x의 값에 10을 할당하고, x의 값이 10인지 확인하는 코드를 작성해보세요.
+const x = 10;
+if(x === 10) {
+  console.log("x의 값은 10입니다.");
+} else {
+  console.log("x의 값은 10이 아닙니다.");
+};
+
+// ? 22번, +, -, *, / 연산자를 사용해 간단한 산술 연산을 하는 코드를 작성해보세요.
+function calculate(a, b, operator) {
+  let result;
+  switch(operator) {
+    case "+":
+      result = a + b;
+      break;
+    case "-":
+      result = a - b;
+      break;
+    case "*":
+      result = a * b;
+      break;
+    case "/":
+      result = a / b;
+      break;
+    default:
+      result = "+, -, *, / 중 하나를 입력해주세요.";
+  }
+  return result;
+};
+console.log(calculate(15, 5, "+"));
+
+// ? 23번, 10을 3으로 나눈 나머지를 구하는 코드를 작성해보세요.
+console.log(10/3);
